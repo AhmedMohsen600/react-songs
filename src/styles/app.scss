@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+svg {
+  cursor: pointer;
+}
+body {
+  background-color: white;
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3 {
+  color: white;
+}
+p {
+  color: white;
+}
+.App {
+  transition: all 0.6s ease;
+}
+.library-active {
+  margin-left: 20%;
+}
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";

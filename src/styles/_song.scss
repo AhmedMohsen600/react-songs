@@ -1,0 +1,38 @@
+.song-container {
+  min-height: 68vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  h2 {
+    font-size: 1.7rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+.moving {
+  animation: dawran 20s linear infinite;
+  transform-box: fill-box;
+}
+
+@keyframes dawran {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .song-container {
+    img {
+      width: 60%;
+    }
+  }
+}

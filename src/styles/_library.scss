@@ -1,0 +1,63 @@
+.library-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  overflow: auto;
+  height: 100%;
+  background: #181818;
+}
+
+.song-info {
+  cursor: pointer;
+  display: flex;
+  padding: 2.3rem 2rem;
+  justify-content: flex-start;
+  gap: 11px;
+  align-items: center;
+  &:hover {
+    background: #00000033;
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      padding-bottom: 0.4rem;
+      color: whitesmoke;
+      font-weight: 550;
+      letter-spacing: 0.5px;
+    }
+    h5 {
+      color: rgba(255, 255, 255, 0.295);
+      font-weight: 300;
+    }
+  }
+  img {
+    width: 43%;
+    border-radius: 4px;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(144, 148, 145, 0.267);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 148, 145, 0.267);
+  border-radius: 20px;
+}
+.selected {
+  background: #00000033;
+}
+@media screen and (max-width: 768px) {
+  .library-container {
+    width: 100%;
+  }
+}
